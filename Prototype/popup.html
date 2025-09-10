@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FocusBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">⚡</div>
+      <div class="title">FocusBuddy</div>
+    </div>
+
+    <div class="main">
+      <div class="topRow">
+        <div id="ring" class="ring">
+          <div id="percent">—</div>
+        </div>
+        <div class="timeBlock">
+          <div class="label">Active</div>
+          <div id="time" class="timeVal">0h 0m 0s</div>
+          <div id="current" class="currentSite">—</div>
+          <div id="status" class="siteStatus">—</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label class="switch">
+          <input id="toggle" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <div class="switchLabel">Enable Tracking</div>
+      </div>
+
+      <div class="sitesList" id="sites"></div>
+
+      <div class="buttons">
+        <button id="reset" class="btn">Reset Data</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
