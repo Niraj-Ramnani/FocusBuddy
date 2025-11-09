@@ -1,0 +1,30 @@
+# Dependency directories
+# Ignore all 'node_modules' folders across the entire project structure.
+node_modules/
+
+# Specifically ignore the 'node_modules' inside Backend and Frontend 
+# (This is often redundant if the first line is present, but good for clarity/safety)
+Backend/node_modules/
+Frontend/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS and Editor generated files
+.DS_Store
+.vscode/
+
+# Environment variables
+# This is CRITICAL for security. Never commit secrets!
+**/.env
+**/.env.*
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
